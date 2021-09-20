@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-
+puts "Welcome to Tic Tac Toe!"
 # Code your CLI Here
+board = [" "," "," "," "," "," "," "," "," "]
+puts " Please enter the positon on the board you'd like to fill from 1 -9"
+input = gets
+#input = input - 1
+index = input_to_index(input)
+move(board,index,character = "X")
+display_board(board)
